@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model 		//モデルを作成
 {
     //
-    use SoftDeletes;			//削除の種類の一つ（復元可能な削除）でこれを消す際には使う
+    //use SoftDeletes;			//削除の種類の一つ（復元可能な削除）でこれを消す際には使う
 
     protected $fillable = [
     	'name',

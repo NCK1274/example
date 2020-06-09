@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::resource('tasks','TasksController');
-Route::get('/create','TasksController@create');				//ルーティング（GETやPOSTのCRUDのアクションも含む）
+Route::resource('tasks','TasksController');
+//Route::get('/create','TasksController@create');				//ルーティング（GETやPOSTのCRUDのアクションも含む）
 // Route::get('/show/{id}','TasksController@show');
 // Route::post('/store','TasksController@store');
 //Route::get('tasks/index','TasksController@index');			
